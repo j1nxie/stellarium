@@ -1,0 +1,9 @@
+[alias]
+kbuild = """build --target x86_64-unknown-none -Z build-std=core \
+	-Z build-std-features=compiler-builtins-mem"""
+kcheck = """check --target x86_64-unknown-none -Z build-std=core \
+	-Z build-std-features=compiler-builtins-mem"""
+kdoc = """doc --target x86_64-unknown-none -Z build-std=core \
+	-Z build-std-features=compiler-builtins-mem"""
+kclippy = """clippy --target x86_64-unknown-none -Z build-std=core \
+	-Z build-std-features=compiler-builtins-mem"""

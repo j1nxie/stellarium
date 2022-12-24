@@ -3,5 +3,36 @@
 version = 3
 
 [[package]]
+name = "boot"
+version = "0.1.0"
+dependencies = [
+ "bootloader-locator",
+]
+
+[[package]]
+name = "bootloader"
+version = "0.10.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "24e13520aa8580a2850fc9f5390dc6753f1062fb66f90e5a61bd5c72b55df731"
+
+[[package]]
+name = "bootloader-locator"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aaaa9db3339d32c2622f2e5d0731eb82a468d3439797c9d4fe426744fe2bd551"
+dependencies = [
+ "json",
+]
+
+[[package]]
+name = "json"
+version = "0.12.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "078e285eafdfb6c4b434e0d31e8cfcb5115b651496faca5749b88fafd4f23bfd"
+
+[[package]]
 name = "stellarium"
 version = "0.1.0"
+dependencies = [
+ "bootloader",
+]
